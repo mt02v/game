@@ -80,6 +80,7 @@ const gameOver = () => {
   });
   
   squaresArry.forEach((square) => {
+    square.addEventListener('click', () => {
     if (flag === ture) {
       square.classList.add('js-maru-checked');
       square.classList.add('js-unclickable');
